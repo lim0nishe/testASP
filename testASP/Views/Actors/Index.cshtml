@@ -17,15 +17,7 @@
         <th>
             @Html.DisplayNameFor(model => model.SecondName)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Patronymic)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Sex)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Age)
-        </th>
+
         <th></th>
     </tr>
 
@@ -37,15 +29,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.SecondName)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Patronymic)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Sex)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Age)
-        </td>
+
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
             @Html.ActionLink("Details", "Details", new { id=item.ID }) |
