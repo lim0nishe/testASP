@@ -1,0 +1,58 @@
+﻿@model IEnumerable< testASP.Models.Film >
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Search</h4>
+        <hr />
+        
+        <fieldset class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" name="name" />
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="genre">Genre</label>
+            <input type="text" class="form-control" name="genre" />
+        </fieldset>       
+        <fieldset class="form-group">
+            <label for="actorName">One actor First Name</label>
+            <input type="text" class="form-control" name="actorName" />
+        </fieldset>
+        <div class="form-group">
+            <input type="submit" value="Find" class="btn btn-default" />
+        </div>       
+    </div>   
+}
+@if (Model != null)
+{
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Genre)
+            </th>
+
+            <th></th>
+        </tr>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Genre)
+            </td>
+        </tr>
+        }
+    </table>
+}

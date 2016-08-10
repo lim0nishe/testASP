@@ -1,0 +1,4 @@
+2016-08-07 21:35:52.0190|INFO|testASP.App_Start.PreStartApp|Application PreStart
+2016-08-07 21:35:56.2035|INFO|testASP.MvcApplication|Application Start
+2016-08-07 21:35:57.1476|INFO|testASP.MvcApplication|Application Init
+2016-08-07 21:35:57.2307|INFO|testASP.MvcApplication|Application Init
