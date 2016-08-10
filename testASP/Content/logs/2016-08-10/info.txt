@@ -180,3 +180,15 @@
 2016-08-10 18:09:38.6281|INFO|testASP.MvcApplication|Application Start
 2016-08-10 18:09:38.6692|INFO|testASP.MvcApplication|Application Init
 2016-08-10 18:09:38.9985|INFO|testASP.MvcApplication|Application Init
+2016-08-10 18:23:46.5237|INFO|testASP.App_Start.PreStartApp|Application PreStart
+2016-08-10 18:23:46.6988|INFO|testASP.MvcApplication|Application Start
+2016-08-10 18:23:46.7418|INFO|testASP.MvcApplication|Application Init
+2016-08-10 18:23:47.0899|INFO|testASP.MvcApplication|Application Init
+2016-08-10 18:30:23.4606|INFO|testASP.App_Start.PreStartApp|Application PreStart
+2016-08-10 18:30:27.3272|INFO|testASP.MvcApplication|Application Start
+2016-08-10 18:30:28.1697|INFO|testASP.MvcApplication|Application Init
+2016-08-10 18:30:28.2277|INFO|testASP.MvcApplication|Application Init
+2016-08-10 18:35:34.3018|INFO|testASP.App_Start.PreStartApp|Application PreStart
+2016-08-10 18:35:38.6998|INFO|testASP.MvcApplication|Application Start
+2016-08-10 18:35:39.6343|INFO|testASP.MvcApplication|Application Init
+2016-08-10 18:35:39.7254|INFO|testASP.MvcApplication|Application Init

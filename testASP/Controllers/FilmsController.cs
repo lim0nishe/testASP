@@ -55,11 +55,14 @@ namespace testASP.Controllers
 
             if (ModelState.IsValid)
             {
-                // Create list of actors from selected ids
-                film.Actors = new List<Actor>();
-                foreach (var id in film.SelectedActorIds)
+                if (film.SelectedActorIds != null)
                 {
-                    film.Actors.Add(actorList.Find(x => x.ID == id));
+                    // Create list of actors from selected ids
+                    film.Actors = new List<Actor>();
+                    foreach (var id in film.SelectedActorIds)
+                    {
+                        film.Actors.Add(actorList.Find(x => x.ID == id));
+                    }
                 }
 
                 db.Films.Add(film);
@@ -100,10 +103,13 @@ namespace testASP.Controllers
             ViewData["actorList"] = actorList;
             if (ModelState.IsValid)
             {
-                film.Actors = new List<Actor>();
-                foreach (var id in film.SelectedActorIds)
+                if (film.SelectedActorIds != null)
                 {
-                    film.Actors.Add(actorList.Find(x => x.ID == id));
+                    film.Actors = new List<Actor>();
+                    foreach (var id in film.SelectedActorIds)
+                    {
+                        film.Actors.Add(actorList.Find(x => x.ID == id));
+                    }
                 }
 
                 db.Entry(film).State = EntityState.Modified;

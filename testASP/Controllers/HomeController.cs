@@ -37,7 +37,9 @@ namespace testASP.Controllers
             else result = db.Films.ToList();
             if (genre != "")
             {
+                // TODO: fix genre search
                 // Delete results with another genre
+                
                 tmp = result.Where(x => !x.Genre.Equals(genre)).ToList();
                 foreach (var film in tmp)
                 {
